@@ -1,13 +1,14 @@
-const basePath = process.cwd();
-const { MODE } = require(`${basePath}/constants/blend_mode.js`);
-const { NETWORK } = require(`${basePath}/constants/network.js`);
+const basePath = process.cwd()
+const { MODE } = require(`${basePath}/constants/blend_mode.js`)
+const { NETWORK } = require(`${basePath}/constants/network.js`)
 
-const network = NETWORK.eth;
+const network = NETWORK.eth
 
 // General metadata for Ethereum
-const namePrefix = "Kreatorland Storefront";
-const description = "zkEVMs are launching this month and offer a path to infinite scaling for Ethereum. But who will win the race between Polygon, zkSync, Scroll and StarkWare?";
-const baseUri = "be178c9ef342887c43142feca4deacb80b568da0";
+const namePrefix = "Kreatorland Storefront"
+const description =
+  "zkEVMs are launching this month and offer a path to infinite scaling for Ethereum. But who will win the race between Polygon, zkSync, Scroll and StarkWare?"
+const baseUri = "be178c9ef342887c43142feca4deacb80b568da0"
 
 const solanaMetadata = {
   symbol: "YC",
@@ -19,7 +20,7 @@ const solanaMetadata = {
       share: 100,
     },
   ],
-};
+}
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
@@ -33,24 +34,24 @@ const layerConfigurations = [
       { name: "5Clothes" },
     ],
   },
-];
+]
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = false
 
-const debugLogs = false;
+const debugLogs = false
 
 const format = {
   width: 720,
   height: 720,
   smoothing: false,
-};
+}
 
 const gif = {
   export: false,
   repeat: 0,
   quality: 100,
   delay: 500,
-};
+}
 
 const text = {
   only: false,
@@ -63,31 +64,31 @@ const text = {
   weight: "regular",
   family: "Courier",
   spacer: " => ",
-};
+}
 
 const pixelFormat = {
   ratio: 2 / 128,
-};
+}
 
 const background = {
   generate: true,
   brightness: "80%",
   static: false,
   default: "#000000",
-};
+}
 
-const extraMetadata = {};
+const extraMetadata = {}
 
-const rarityDelimiter = "#";
+const rarityDelimiter = "#"
 
-const uniqueDnaTorrance = 10000;
+const uniqueDnaTorrance = 10000
 
 const preview = {
   thumbPerRow: 5,
   thumbWidth: 50,
   imageRatio: format.height / format.width,
   imageName: "preview.png",
-};
+}
 
 const preview_gif = {
   numberOfImages: 5,
@@ -96,7 +97,7 @@ const preview_gif = {
   quality: 100,
   delay: 500,
   imageName: "preview.gif",
-};
+}
 
 module.exports = {
   format,
@@ -117,4 +118,4 @@ module.exports = {
   solanaMetadata,
   gif,
   preview_gif,
-};
+}
