@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Kreatorland Storefront";
+const description = "zkEVMs are launching this month and offer a path to infinite scaling for Ethereum. But who will win the race between Polygon, zkSync, Scroll and StarkWare?";
+const baseUri = "be178c9ef342887c43142feca4deacb80b568da0";
 
 const solanaMetadata = {
   symbol: "YC",
